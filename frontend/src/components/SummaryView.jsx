@@ -7,9 +7,13 @@ export default function SummaryView() {
   if (!summary) return null;
 
   return (
-    <div className="summary">
-      <h3>Conversation Summary</h3>
-      <p>{summary}</p>
+    <div className="summary-container">
+      <div className="summary-header">
+        <h3>📋 Conversation Summary</h3>
+      </div>
+      <div className="summary-content">
+        <p>{summary}</p>
+      </div>
     </div>
   );
 }
